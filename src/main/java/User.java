@@ -3,10 +3,20 @@ public class User {
     private String nazwisko;
     private String login;
     private String haslo;
-
+    private ListaZadan listaZadan;
+    private ListaZadanZakonczonych listaZadanZakonczonych;
     public User(String login, String haslo) {
         this.login = login;
         this.haslo = haslo;
+    }
+
+    public User(String imie, String nazwisko, String login, String haslo, ListaZadan listaZadan, ListaZadanZakonczonych listaZadanZakonczonych) {
+        this.imie = imie;
+        this.nazwisko = nazwisko;
+        this.login = login;
+        this.haslo = haslo;
+        this.listaZadan = listaZadan;
+        this.listaZadanZakonczonych = listaZadanZakonczonych;
     }
 
     public User(String imie, String nazwisko, String login, String haslo) {
