@@ -10,6 +10,22 @@ public class User {
         this.haslo = haslo;
     }
 
+    public ListaZadan getListaZadan() {
+        return listaZadan;
+    }
+
+    public void setListaZadan(ListaZadan listaZadan) {
+        this.listaZadan = listaZadan;
+    }
+
+    public ListaZadanZakonczonych getListaZadanZakonczonych() {
+        return listaZadanZakonczonych;
+    }
+
+    public void setListaZadanZakonczonych(ListaZadanZakonczonych listaZadanZakonczonych) {
+        this.listaZadanZakonczonych = listaZadanZakonczonych;
+    }
+
     public String getLogin() {
         return login;
     }
