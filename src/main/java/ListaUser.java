@@ -13,6 +13,12 @@ public class ListaUser {
 
     public void dodaj(User user){
         this.listaUser.add(user);
-        System.out.println("User dodany");
+    }
+    public int iloscUser(){
+        int a=0;
+        for (User user:listaUser){
+            a++;
+        }
+        return a;
     }
 }
