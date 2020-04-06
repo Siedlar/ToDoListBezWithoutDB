@@ -19,4 +19,10 @@ private ListaUser listaUser;
         }
         return null;
     }
+    public  static boolean sprawdzCzyHasloJestIdentyczne(String haslo,String haslo2){
+        if(haslo.equals(haslo2)){
+            return true;
+        }
+        else return false;
+    }
 }

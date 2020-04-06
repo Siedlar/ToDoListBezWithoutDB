@@ -14,6 +14,18 @@ public class User {
         return listaZadan;
     }
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "imie='" + imie + '\'' +
+                ", nazwisko='" + nazwisko + '\'' +
+                ", login='" + login + '\'' +
+                ", haslo='" + haslo + '\'' +
+                ", listaZadan=" + listaZadan +
+                ", listaZadanZakonczonych=" + listaZadanZakonczonych +
+                '}';
+    }
+
     public void setListaZadan(ListaZadan listaZadan) {
         this.listaZadan = listaZadan;
     }
