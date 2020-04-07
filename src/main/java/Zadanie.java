@@ -7,4 +7,9 @@ public class Zadanie {
         this.nazwaZadania = nazwaZadania;
         this.czasTrwania=czasTrwania;
     }
+
+    @Override
+    public String toString() {
+        return nazwaZadania + " " +  czasTrwania ;
+    }
 }

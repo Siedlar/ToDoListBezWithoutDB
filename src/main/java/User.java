@@ -16,14 +16,8 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
-                "imie='" + imie + '\'' +
-                ", nazwisko='" + nazwisko + '\'' +
-                ", login='" + login + '\'' +
-                ", haslo='" + haslo + '\'' +
-                ", listaZadan=" + listaZadan +
-                ", listaZadanZakonczonych=" + listaZadanZakonczonych +
-                '}';
+        return imie + " " + nazwisko;
+
     }
 
     public void setListaZadan(ListaZadan listaZadan) {

@@ -3,7 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="9d2e52b6-dee5-4185-9d92-e741bfd3832e" name="Default Changelist" comment="Naprawienie walidacji i logowania">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ListaZadan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ListaZadan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ListaZadanZakonczonych.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ListaZadanZakonczonych.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Zadanie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Zadanie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ListaZadan.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ListaZadan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Zadanie.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Zadanie.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,10 +100,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Naprawienie walidacji i logowania" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="632" y="274" key="#com.intellij.ide.util.MemberChooser" timestamp="1586194872843">
+    <state x="632" y="274" key="#com.intellij.ide.util.MemberChooser" timestamp="1586258345676">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="632" y="274" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1010/1680.0.1920.1040@0.0.1680.1010" timestamp="1586194872843" />
+    <state x="632" y="274" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1010/1680.0.1920.1040@0.0.1680.1010" timestamp="1586258345676" />
     <state x="557" y="305" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586007681733">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
@@ -105,22 +112,22 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="455" y="153" key="CommitChangelistDialog2/0.0.1680.1010/1680.0.1920.1040@0.0.1680.1010" timestamp="1586197384886" />
-    <state width="1340" height="175" key="GridCell.Tab.0.bottom" timestamp="1586255336312">
+    <state width="1340" height="175" key="GridCell.Tab.0.bottom" timestamp="1586267699617">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1340" height="175" key="GridCell.Tab.0.bottom/0.0.1680.1010/1680.0.1920.1040@0.0.1680.1010" timestamp="1586255336312" />
-    <state width="1340" height="175" key="GridCell.Tab.0.center" timestamp="1586255336312">
+    <state width="1340" height="175" key="GridCell.Tab.0.bottom/0.0.1680.1010/1680.0.1920.1040@0.0.1680.1010" timestamp="1586267699617" />
+    <state width="1340" height="175" key="GridCell.Tab.0.center" timestamp="1586267699617">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1340" height="175" key="GridCell.Tab.0.center/0.0.1680.1010/1680.0.1920.1040@0.0.1680.1010" timestamp="1586255336312" />
-    <state width="1340" height="175" key="GridCell.Tab.0.left" timestamp="1586255336312">
+    <state width="1340" height="175" key="GridCell.Tab.0.center/0.0.1680.1010/1680.0.1920.1040@0.0.1680.1010" timestamp="1586267699617" />
+    <state width="1340" height="175" key="GridCell.Tab.0.left" timestamp="1586267699617">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1340" height="175" key="GridCell.Tab.0.left/0.0.1680.1010/1680.0.1920.1040@0.0.1680.1010" timestamp="1586255336312" />
-    <state width="1340" height="175" key="GridCell.Tab.0.right" timestamp="1586255336312">
+    <state width="1340" height="175" key="GridCell.Tab.0.left/0.0.1680.1010/1680.0.1920.1040@0.0.1680.1010" timestamp="1586267699616" />
+    <state width="1340" height="175" key="GridCell.Tab.0.right" timestamp="1586267699617">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1340" height="175" key="GridCell.Tab.0.right/0.0.1680.1010/1680.0.1920.1040@0.0.1680.1010" timestamp="1586255336312" />
+    <state width="1340" height="175" key="GridCell.Tab.0.right/0.0.1680.1010/1680.0.1920.1040@0.0.1680.1010" timestamp="1586267699617" />
     <state width="1340" height="218" key="GridCell.Tab.1.bottom" timestamp="1586108288984">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
@@ -137,10 +144,10 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1340" height="218" key="GridCell.Tab.1.right/0.0.1680.1010/1680.0.1920.1040@0.0.1680.1010" timestamp="1586108288984" />
-    <state x="523" y="382" key="com.intellij.ide.util.TipDialog" timestamp="1586253067544">
+    <state x="523" y="382" key="com.intellij.ide.util.TipDialog" timestamp="1586265527518">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="523" y="382" key="com.intellij.ide.util.TipDialog/0.0.1680.1010/1680.0.1920.1040@0.0.1680.1010" timestamp="1586253067544" />
+    <state x="523" y="382" key="com.intellij.ide.util.TipDialog/0.0.1680.1010/1680.0.1920.1040@0.0.1680.1010" timestamp="1586265527518" />
     <state x="486" y="197" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1586102940574">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>

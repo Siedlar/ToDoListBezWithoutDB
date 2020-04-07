@@ -3,7 +3,9 @@ import org.w3c.dom.ls.LSOutput;
 
 import java.util.ArrayList;
 import java.util.InputMismatchException;
+import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args){
@@ -20,13 +22,24 @@ public class Main {
       user.setListaZadan(new ListaZadan(new ArrayList<Zadanie>()));
       user.setListaZadanZakonczonych(new ListaZadanZakonczonych(new ArrayList<Zadanie>()));
       do {
-          System.out.println("1.Dodaj zadanie\n2.Wyświetl liste zadań aktualnych\n2.Wyświetl liste zadań zakończonych.\n3.Sprawdź swoje dane\n4.Wyloguj się");
+          System.out.println("1.Dodaj zadanie\n2.Wyświetl liste zadań aktualnych\n3.Wyświetl liste zadań zakończonych.\n4.Oznacz zadanie jako skonczone\n5.Sprawdź swoje dane\n6.Zapisz dane do pliku\n7.Wyloguj się");
 
           b=in.nextInt();
          if(b==1){
-             user.getListaZadan().getListaZadan().add(new Zadanie("Java", 60));
+             user.getListaZadan().dodaj(new Zadanie("Java", 60));
+             user.getListaZadan().dodaj(new Zadanie("Sprzatanie", 120));
+             user.getListaZadan().dodaj(new Zadanie("Nauka", 180));
+             user.getListaZadan().dodaj(new Zadanie("LOL", 300));
+
+      }else if(b==2){
+             user.getListaZadan().wyswietl();
+         }else if(b==3){
+             user.getListaZadanZakonczonych().wyswietl();
+         }else if(b==4){
+             System.out.println(user.toString());
          }
-      }while(b!=4);
+
+      }while(b!=7);
         System.out.println("Dziekuje za skorzystanie z programu");
     }
 

@@ -14,4 +14,14 @@ public class ListaZadanZakonczonych {
     public ListaZadanZakonczonych(List<Zadanie> listaZadan) {
         this.listaZadan = listaZadan;
     }
-}
+
+
+    public void wyswietl(){
+        if(listaZadan.isEmpty()){
+            System.out.println("Nie ukonczyłeś jeszcze zadnych zadań!!!\n-------------------");
+
+        }else
+        for(Zadanie zadanie:listaZadan){
+            System.out.println(zadanie);
+        }
+    }}
