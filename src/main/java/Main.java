@@ -1,4 +1,5 @@
 import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+import org.w3c.dom.ls.LSOutput;
 
 import java.util.ArrayList;
 import java.util.InputMismatchException;
@@ -68,12 +69,12 @@ return lista;
             while(x==0);
             return user;
         }else if(a==2){
-            String login;
-            String haslo;
-            String haslo2;
-            System.out.println("1.Logowanie z podaniem wszystkich danych od razu\n2.Uzupełnie dane później");
+            System.out.println("1.Uzupelnie dane później.\n2.Logowanie z podaniem wszystkich danych od razu");
             int z=in.nextInt();
             if(z==1){
+                String login;
+                String haslo;
+                String haslo2;
                 int k;
                 do{
                     k=2;
@@ -93,7 +94,9 @@ if(Walidacja.sprawdzCzyHasloJestIdentyczne(haslo,haslo2)){
     System.out.println("Hasła nie są identyczne spróbuj ponownie.");
     k=2;
 }
-            }while(k==2);}
+            }while(k==2);} else if(z==2){
+                zarejestruj(in,listaUser);
+            }
         }else if(a==3) {
             System.exit(0);
         }else{
@@ -105,4 +108,61 @@ if(Walidacja.sprawdzCzyHasloJestIdentyczne(haslo,haslo2)){
         return null;
 
 }
+private static void zarejestrujBezDanych(Scanner in,ListaUser listaUser){
+    String login;
+    String haslo;
+    String haslo2;
+    int k;
+    do{
+        k=2;
+        in=new Scanner(System.in);
+        System.out.println("Login");
+        login=in.nextLine();
+        System.out.println("Hasło");
+        haslo=in.nextLine();
+        System.out.println("Potwierz hasło");
+
+        haslo2=in.nextLine();
+
+        if(Walidacja.sprawdzCzyHasloJestIdentyczne(haslo,haslo2)){
+            listaUser.dodaj(new User(login,haslo));
+            listaUser.getListaUser().forEach(usa-> System.out.println(usa));
+            k=1; }else{
+            System.out.println("Hasła nie są identyczne spróbuj ponownie.");
+            k=2;
+        }
+    }while(k==2);}
+    private static void zarejestruj(Scanner in,ListaUser listaUser){
+        String login;
+        String haslo;
+        String haslo2;
+        int k;
+        do{
+            k=2;
+            in=new Scanner(System.in);
+            System.out.println("Login");
+            login=in.nextLine();
+            System.out.println("Hasło");
+            haslo=in.nextLine();
+            System.out.println("Potwierz hasło");
+
+            haslo2=in.nextLine();
+
+            if(Walidacja.sprawdzCzyHasloJestIdentyczne(haslo,haslo2)){
+                System.out.println("Hasła są prawidłowe");
+                System.out.println("Podaj imie");
+                String imie=in.nextLine();
+                System.out.println("Podaj nazwisko");
+                String nazwisko=in.nextLine();
+                listaUser.dodaj(new User(login,haslo,imie,nazwisko));
+                listaUser.getListaUser().forEach(usa-> System.out.println(usa));
+                k=1; }else{
+                System.out.println("Hasła nie są identyczne spróbuj ponownie.");
+                k=2;
+            }
+        }while(k==2);}
 }
+
+
+
+
