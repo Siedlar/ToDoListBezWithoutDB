@@ -1,12 +1,17 @@
 import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
 import org.w3c.dom.ls.LSOutput;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.time.LocalDate;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 public class Main {
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException, IOException {
         User user=null;
         Scanner in=new Scanner(System.in);
       try {
@@ -20,22 +25,10 @@ public class Main {
       user.setListaZadan(new ListaZadan(new ArrayList<Zadanie>()));
       user.setListaZadanZakonczonych(new ListaZadanZakonczonych(new ArrayList<Zadanie>()));
       do {
-          System.out.println("1.Dodaj zadanie\n2.Wyświetl liste zadań aktualnych\n3.Wyświetl liste zadań zakończonych.\n4.Oznacz zadanie jako skonczone\n5.Sprawdź swoje dane\n6.Zapisz dane do pliku\n7.Posortuj dane \n8.Wyloguj się");
+          System.out.println("1.Dodaj zadanie\n2.Wyświetl liste zadań aktualnych\n3.Wyświetl liste zadań zakończonych.\n4.Oznacz zadanie jako skonczone\n5.Sprawdź swoje dane\n6.Posortuj dane \n7.Zapisz dane do pliku i wyloguj się");
 
           b=in.nextInt();
          if(b==1){
-            /* int wyjdz;
-             String zadanie;
-             int dlugoscTrwania;
-             do{
-                 in=new Scanner(System.in);
-             System.out.println("Podaj nazwe zadania");
-              zadanie=in.nextLine();
-             System.out.println("Podaj czas trwania zadania wyrażony w minutach");
-             dlugoscTrwania=in.nextInt();
-                 System.out.println("Chcesz dodać kolejne zadanie?\n1.Tak\n2.Nie");
-                 wyjdz=in.nextInt();
-             user.getListaZadan().dodaj(new Zadanie(zadanie, dlugoscTrwania));}while(wyjdz==1);*/
          try{ dodajZadanie(user);}catch (InputMismatchException e){
              System.out.println("Czas powininen zawierać tylko cyfry!!\n--------------------");
              Thread.sleep(2000);
@@ -59,11 +52,22 @@ public class Main {
              i=in.nextInt();
              user.getListaZadanZakonczonych().dodaj(user.getListaZadan().getListaZadan().get(i-1));
              user.getListaZadan().getListaZadan().remove(i-1);
-         }else if(b==5){
+         }else if(b==5) {
+             int a;
              System.out.println(user.toString());
+             System.out.println("-----------\nCzy chcesz zaaktualizować swoje dane??\n1.Tak 2.Nie");
+             a=in.nextInt();
+             if(a==1){
+                 String imie,nazwisko;
+                 in=new Scanner(System.in);
+                 System.out.println("Podaj imie");
+                 imie=in.nextLine();
+                 user.setImie(imie);
+                 System.out.println("Podaj nazwisko");
+                 nazwisko=in.nextLine();
+                 user.setNazwisko(nazwisko);
+             }
          }else if(b==6){
-             System.out.println(user.toString());
-         }else if(b==7){
              if(user.getListaZadan().getListaZadan().isEmpty()){
                  System.out.println("Nie ma czego sortować, lista jest pusta!!!");
                  Thread.sleep(2000);
@@ -78,8 +82,10 @@ public class Main {
            }
          }}
 
-      }while(b!=8);
-        System.out.println("Dziekuje za skorzystanie z programu");
+      }while(b!=7);
+        System.out.println("Dziekuje za skorzystanie z programu\n Twoje postępy zostały zapisane do pliku!!!");
+        ZapisDoPliku zapis=new ZapisDoPliku(user,LocalDate.now(),new BufferedWriter(new FileWriter(user.getLogin()+".txt",true)));
+zapis.zapisz();
     }
 
 
