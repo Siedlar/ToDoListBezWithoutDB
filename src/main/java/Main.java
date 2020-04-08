@@ -71,7 +71,7 @@ public class Main {
              System.out.println("1.Posortuj dane ze wzlęgu na czas trwania\n2.Posortuj dane ze wzgledu na nazwe");
            int z=in.nextInt();
            if(z==2){
-    Collections.sort(user.getListaZadan().getListaZadan(), Comparator.comparing(Zadanie::getNazwaZadania));
+    Collections.sort(user.getListaZadan().getListaZadan(),(x1,x2)->{return x1.getNazwaZadania().compareTo(x2.getNazwaZadania());});
            }else if(z==1){
                Collections.sort(user.getListaZadan().getListaZadan(),(x1,x2)->x1.getCzasTrwania()-x2.getCzasTrwania());
 
