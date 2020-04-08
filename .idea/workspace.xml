@@ -9,7 +9,9 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Zadanie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Zadanie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ListaZadan.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ListaZadan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ListaZadanZakonczonych.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ListaZadanZakonczonych.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Zadanie.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Zadanie.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,10 +102,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="Naprawienie walidacji i logowania" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="632" y="274" key="#com.intellij.ide.util.MemberChooser" timestamp="1586258345676">
+    <state x="632" y="274" key="#com.intellij.ide.util.MemberChooser" timestamp="1586298746187">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="632" y="274" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1010/1680.0.1920.1040@0.0.1680.1010" timestamp="1586258345676" />
+    <state x="632" y="274" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1010@0.0.1680.1010" timestamp="1586298746187" />
     <state x="557" y="305" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586007681733">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
@@ -112,22 +115,26 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="455" y="153" key="CommitChangelistDialog2/0.0.1680.1010/1680.0.1920.1040@0.0.1680.1010" timestamp="1586197384886" />
-    <state width="1340" height="175" key="GridCell.Tab.0.bottom" timestamp="1586267699617">
+    <state width="1340" height="175" key="GridCell.Tab.0.bottom" timestamp="1586357776891">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1340" height="175" key="GridCell.Tab.0.bottom/0.0.1680.1010/1680.0.1920.1040@0.0.1680.1010" timestamp="1586267699617" />
-    <state width="1340" height="175" key="GridCell.Tab.0.center" timestamp="1586267699617">
+    <state width="1340" height="175" key="GridCell.Tab.0.bottom/0.0.1680.1010/1680.0.1920.1040@0.0.1680.1010" timestamp="1586268796532" />
+    <state width="1340" height="175" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1586357776891" />
+    <state width="1340" height="175" key="GridCell.Tab.0.center" timestamp="1586357776890">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1340" height="175" key="GridCell.Tab.0.center/0.0.1680.1010/1680.0.1920.1040@0.0.1680.1010" timestamp="1586267699617" />
-    <state width="1340" height="175" key="GridCell.Tab.0.left" timestamp="1586267699617">
+    <state width="1340" height="175" key="GridCell.Tab.0.center/0.0.1680.1010/1680.0.1920.1040@0.0.1680.1010" timestamp="1586268796532" />
+    <state width="1340" height="175" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1586357776890" />
+    <state width="1340" height="175" key="GridCell.Tab.0.left" timestamp="1586357776890">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1340" height="175" key="GridCell.Tab.0.left/0.0.1680.1010/1680.0.1920.1040@0.0.1680.1010" timestamp="1586267699616" />
-    <state width="1340" height="175" key="GridCell.Tab.0.right" timestamp="1586267699617">
+    <state width="1340" height="175" key="GridCell.Tab.0.left/0.0.1680.1010/1680.0.1920.1040@0.0.1680.1010" timestamp="1586268796532" />
+    <state width="1340" height="175" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1586357776890" />
+    <state width="1340" height="175" key="GridCell.Tab.0.right" timestamp="1586357776891">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1340" height="175" key="GridCell.Tab.0.right/0.0.1680.1010/1680.0.1920.1040@0.0.1680.1010" timestamp="1586267699617" />
+    <state width="1340" height="175" key="GridCell.Tab.0.right/0.0.1680.1010/1680.0.1920.1040@0.0.1680.1010" timestamp="1586268796532" />
+    <state width="1340" height="175" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1586357776891" />
     <state width="1340" height="218" key="GridCell.Tab.1.bottom" timestamp="1586108288984">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
@@ -144,10 +151,11 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1340" height="218" key="GridCell.Tab.1.right/0.0.1680.1010/1680.0.1920.1040@0.0.1680.1010" timestamp="1586108288984" />
-    <state x="523" y="382" key="com.intellij.ide.util.TipDialog" timestamp="1586265527518">
+    <state x="523" y="382" key="com.intellij.ide.util.TipDialog" timestamp="1586346595888">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="523" y="382" key="com.intellij.ide.util.TipDialog/0.0.1680.1010/1680.0.1920.1040@0.0.1680.1010" timestamp="1586265527518" />
+    <state x="523" y="382" key="com.intellij.ide.util.TipDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1586346595888" />
     <state x="486" y="197" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1586102940574">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
@@ -160,9 +168,10 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="483" y="261" key="run.anything.popup/0.0.1680.1010/1680.0.1920.1040@0.0.1680.1010" timestamp="1586005372127" />
-    <state x="490" y="331" width="672" height="678" key="search.everywhere.popup" timestamp="1586104349997">
+    <state x="490" y="331" width="672" height="678" key="search.everywhere.popup" timestamp="1586295054636">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="490" y="331" width="672" height="678" key="search.everywhere.popup/0.0.1680.1010/1680.0.1920.1040@0.0.1680.1010" timestamp="1586104349997" />
+    <state x="490" y="331" width="672" height="678" key="search.everywhere.popup/0.0.1680.1010@0.0.1680.1010" timestamp="1586295054636" />
   </component>
 </project>

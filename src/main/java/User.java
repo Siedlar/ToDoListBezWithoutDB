@@ -1,6 +1,6 @@
 public class User {
-    private String imie;
-    private String nazwisko;
+    private String imie="brak";
+    private String nazwisko="brak";
     private String login;
     private String haslo;
     private ListaZadan listaZadan;
@@ -16,6 +16,7 @@ public class User {
 
     @Override
     public String toString() {
+
         return imie + " " + nazwisko;
 
     }
@@ -80,4 +81,6 @@ public class User {
     public void setNazwisko(String nazwisko) {
         this.nazwisko = nazwisko;
     }
+
+
 }

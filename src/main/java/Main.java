@@ -1,14 +1,12 @@
 import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
 import org.w3c.dom.ls.LSOutput;
 
-import java.util.ArrayList;
-import java.util.InputMismatchException;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) throws InterruptedException {
         User user=null;
         Scanner in=new Scanner(System.in);
       try {
@@ -22,24 +20,65 @@ public class Main {
       user.setListaZadan(new ListaZadan(new ArrayList<Zadanie>()));
       user.setListaZadanZakonczonych(new ListaZadanZakonczonych(new ArrayList<Zadanie>()));
       do {
-          System.out.println("1.Dodaj zadanie\n2.Wyświetl liste zadań aktualnych\n3.Wyświetl liste zadań zakończonych.\n4.Oznacz zadanie jako skonczone\n5.Sprawdź swoje dane\n6.Zapisz dane do pliku\n7.Wyloguj się");
+          System.out.println("1.Dodaj zadanie\n2.Wyświetl liste zadań aktualnych\n3.Wyświetl liste zadań zakończonych.\n4.Oznacz zadanie jako skonczone\n5.Sprawdź swoje dane\n6.Zapisz dane do pliku\n7.Posortuj dane \n8.Wyloguj się");
 
           b=in.nextInt();
          if(b==1){
-             user.getListaZadan().dodaj(new Zadanie("Java", 60));
-             user.getListaZadan().dodaj(new Zadanie("Sprzatanie", 120));
-             user.getListaZadan().dodaj(new Zadanie("Nauka", 180));
-             user.getListaZadan().dodaj(new Zadanie("LOL", 300));
-
-      }else if(b==2){
-             user.getListaZadan().wyswietl();
-         }else if(b==3){
-             user.getListaZadanZakonczonych().wyswietl();
-         }else if(b==4){
-             System.out.println(user.toString());
+            /* int wyjdz;
+             String zadanie;
+             int dlugoscTrwania;
+             do{
+                 in=new Scanner(System.in);
+             System.out.println("Podaj nazwe zadania");
+              zadanie=in.nextLine();
+             System.out.println("Podaj czas trwania zadania wyrażony w minutach");
+             dlugoscTrwania=in.nextInt();
+                 System.out.println("Chcesz dodać kolejne zadanie?\n1.Tak\n2.Nie");
+                 wyjdz=in.nextInt();
+             user.getListaZadan().dodaj(new Zadanie(zadanie, dlugoscTrwania));}while(wyjdz==1);*/
+         try{ dodajZadanie(user);}catch (InputMismatchException e){
+             System.out.println("Czas powininen zawierać tylko cyfry!!\n--------------------");
+             Thread.sleep(2000);
          }
 
-      }while(b!=7);
+
+      }else if(b==2){
+
+             user.getListaZadan().wyswietl();
+             TimeUnit.SECONDS.sleep(3);
+             System.out.println("-------------------");
+         }else if(b==3){
+               Collections.sort(user.getListaZadan().getListaZadan());
+             user.getListaZadanZakonczonych().wyswietl();
+         }else if(b==4){
+             int i;
+             System.out.println("Wybierz zadanie\n---------------");
+             user.getListaZadan().wyswietl();
+             TimeUnit.SECONDS.sleep(3);
+             System.out.println("-------------------");
+             i=in.nextInt();
+             user.getListaZadanZakonczonych().dodaj(user.getListaZadan().getListaZadan().get(i-1));
+             user.getListaZadan().getListaZadan().remove(i-1);
+         }else if(b==5){
+             System.out.println(user.toString());
+         }else if(b==6){
+             System.out.println(user.toString());
+         }else if(b==7){
+             if(user.getListaZadan().getListaZadan().isEmpty()){
+                 System.out.println("Nie ma czego sortować, lista jest pusta!!!");
+                 Thread.sleep(2000);
+             }else{
+             System.out.println("1.Posortuj dane ze wzlęgu na czas trwania\n2.Posortuj dane ze wzgledu na nazwe");
+           int z=in.nextInt();
+           if(z==2){
+    Collections.sort(user.getListaZadan().getListaZadan(), Comparator.comparing(Zadanie::getNazwaZadania));
+           }else if(z==1){
+               Collections.sort(user.getListaZadan().getListaZadan(),(x1,x2)->x1.getCzasTrwania()-x2.getCzasTrwania());
+
+           }
+         }}
+
+      }while(b!=8);
         System.out.println("Dziekuje za skorzystanie z programu");
     }
 
@@ -174,6 +213,21 @@ private static void zarejestrujBezDanych(Scanner in,ListaUser listaUser){
                 k=2;
             }
         }while(k==2);}
+        private static void dodajZadanie(User user) throws InputMismatchException{
+        Scanner in=null;
+            int wyjdz;
+            String zadanie;
+            int dlugoscTrwania;
+            do{
+                in=new Scanner(System.in);
+                System.out.println("Podaj nazwe zadania");
+                zadanie=in.nextLine();
+                System.out.println("Podaj czas trwania zadania wyrażony w minutach");
+                dlugoscTrwania=in.nextInt();
+                System.out.println("Chcesz dodać kolejne zadanie?\n1.Tak\n2.Nie");
+                wyjdz=in.nextInt();
+                user.getListaZadan().dodaj(new Zadanie(zadanie, dlugoscTrwania));}while(wyjdz==1);
+        }
 }
 
 
