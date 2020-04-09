@@ -10,6 +10,9 @@ public class User {
         this.haslo = haslo;
     }
 
+    public User() {
+    }
+
     public ListaZadan getListaZadan() {
         return listaZadan;
     }

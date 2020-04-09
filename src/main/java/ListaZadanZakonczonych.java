@@ -31,4 +31,17 @@ public class ListaZadanZakonczonych {
         listaZadan.add(zadanie);
         System.out.println("Zadanie dodane poprawnie!!\n--------------------");
 
+    }
+    public String wypisz(){
+        if(listaZadan.isEmpty()){
+            return "Nie ukonczyłeś dzisiaj żadnych zadań!!!";
+        }else{
+        StringBuilder builder=new StringBuilder();
+        int i=0;
+        for(Zadanie zadanie:listaZadan){
+            i++;
+            builder.append(i+". "+zadanie.toString()+"\n");
+        }
+        return builder.toString();
     }}
+}

@@ -39,7 +39,7 @@ public class ZapisDoPliku {
     }
     public void zapisz(){
         try{
-            bufferedWriter.append(localDate.toString()+ " "+ user.getImie()+" "+user.getNazwisko()+"\n");
+            bufferedWriter.append(localDate.toString()+ " "+ user.getImie()+" "+user.getNazwisko()+"\n"+"Zadania dzisiaj wykonane to:\n"+user.getListaZadanZakonczonych().wypisz()+"\nZadanie wpisane ale nie skonczone to:\n"+user.getListaZadan().wypisz()+"\n-----------------\n");
             bufferedWriter.close();
             }catch (IOException e){
             System.out.println("");
