@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d2e52b6-dee5-4185-9d92-e741bfd3832e" name="Default Changelist" comment="Naprawienie walidacji i logowania">
-      <change afterPath="$PROJECT_DIR$/src/test/java/WalidacjaTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pyrtowski.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Pyrtowski.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Siedlar.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ListaZadan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ListaZadan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ListaZadanZakonczonych.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ListaZadanZakonczonych.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ZapisDoPliku.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ZapisDoPliku.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ListaZadan.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ListaZadan.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ListaZadanZakonczonych.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ListaZadanZakonczonych.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ZapisDoPliku.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ZapisDoPliku.class" afterDir="false" />
-    </list>
+    <list default="true" id="9d2e52b6-dee5-4185-9d92-e741bfd3832e" name="Default Changelist" comment="Naprawienie walidacji i logowania" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -160,26 +147,26 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="455" y="153" key="CommitChangelistDialog2/0.0.1680.1010/1680.0.1920.1040@0.0.1680.1010" timestamp="1586197384886" />
-    <state width="1340" height="175" key="GridCell.Tab.0.bottom" timestamp="1586450904891">
+    <state width="1340" height="175" key="GridCell.Tab.0.bottom" timestamp="1586451170871">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1340" height="175" key="GridCell.Tab.0.bottom/0.0.1680.1010/1680.0.1920.1040@0.0.1680.1010" timestamp="1586268796532" />
-    <state width="1340" height="175" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1586450904891" />
-    <state width="1340" height="175" key="GridCell.Tab.0.center" timestamp="1586450904891">
+    <state width="1340" height="175" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1586451170871" />
+    <state width="1340" height="175" key="GridCell.Tab.0.center" timestamp="1586451170871">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1340" height="175" key="GridCell.Tab.0.center/0.0.1680.1010/1680.0.1920.1040@0.0.1680.1010" timestamp="1586268796532" />
-    <state width="1340" height="175" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1586450904891" />
-    <state width="1340" height="175" key="GridCell.Tab.0.left" timestamp="1586450904891">
+    <state width="1340" height="175" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1586451170871" />
+    <state width="1340" height="175" key="GridCell.Tab.0.left" timestamp="1586451170871">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1340" height="175" key="GridCell.Tab.0.left/0.0.1680.1010/1680.0.1920.1040@0.0.1680.1010" timestamp="1586268796532" />
-    <state width="1340" height="175" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1586450904891" />
-    <state width="1340" height="175" key="GridCell.Tab.0.right" timestamp="1586450904891">
+    <state width="1340" height="175" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1586451170871" />
+    <state width="1340" height="175" key="GridCell.Tab.0.right" timestamp="1586451170871">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1340" height="175" key="GridCell.Tab.0.right/0.0.1680.1010/1680.0.1920.1040@0.0.1680.1010" timestamp="1586268796532" />
-    <state width="1340" height="175" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1586450904891" />
+    <state width="1340" height="175" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1586451170871" />
     <state width="1340" height="218" key="GridCell.Tab.1.bottom" timestamp="1586108288984">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
@@ -213,6 +200,10 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="403" y="294" width="847" height="602" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1680.1010/1680.0.1920.1040@0.0.1680.1010" timestamp="1586105078880" />
+    <state x="209" y="253" key="new project wizard" timestamp="1586451167037">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="209" y="253" key="new project wizard/0.0.1680.1010@0.0.1680.1010" timestamp="1586451167037" />
     <state x="483" y="261" key="run.anything.popup" timestamp="1586005372127">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
